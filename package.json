@@ -1,0 +1,26 @@
+{
+    "name": "tiger-vscode",
+    "displayName": "Tiger Language Support",
+    "description": "Implements syntax highlighting for the Tiger language",
+    "version": "0.0.1",
+    "publisher": "yunyu",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "tig",
+            "aliases": ["Tiger", "tig"],
+            "extensions": [".tig"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "tig",
+            "scopeName": "source.tig",
+            "path": "./syntaxes/Tiger.tmLanguage"
+        }]
+    }
+}
